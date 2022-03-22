@@ -1,4 +1,0 @@
-"""
-Arquivo para testes.
-"""
-

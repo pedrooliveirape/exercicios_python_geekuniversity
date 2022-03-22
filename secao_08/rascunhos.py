@@ -1,0 +1,4 @@
+"""
+Arquivo para rascunho.
+"""
+
