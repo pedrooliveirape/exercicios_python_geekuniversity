@@ -1,5 +1,5 @@
 """
-Faça uma função que receba um vetor de inteiros e retorne o maior valor.
+Faça uma função chamda 'maiorvalor()' que receba um vetor de inteiros e retorne o maior valor.
 
 Doctests:
 

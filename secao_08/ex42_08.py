@@ -1,5 +1,5 @@
 """
-Faça uma função que receba um vetor de reais e retorne a média dele.
+Faça uma função chamada 'mediavetor()' que receba um vetor de reais e retorne a média dele.
 
 Doctests:
 

@@ -1,5 +1,5 @@
 """
-Faça uma função que receba um vetor de inteiros e preencha com números aleatórios sem repetição.
+Faça uma função chamada 'gerador()' que receba um vetor de inteiros e preencha com números aleatórios sem repetição.
 """
 
 
