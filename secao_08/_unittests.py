@@ -3,6 +3,8 @@ from ex42_08 import mediavetor
 from ex41_08 import maiorvalor
 from ex43_08 import gerador
 from ex44_08 import par_impar
+from ex45_08 import desviopadrao
+from ex46_08 import normal, inversa, media
 
 
 class Test41(unittest.TestCase):
@@ -84,6 +86,34 @@ class Test44(unittest.TestCase):
             resposta, True
         )
 
+
+class Test45(unittest.TestCase):
+    def test_desvio_padrao_um(self):
+        self.assertEqual(
+            desviopadrao([78, 72, 66]), 4.90
+        )
+
+    def test_devio_padrao_dois(self):
+        self.assertEqual(
+            desviopadrao([83, 65, 65]), 8.49
+        )
+
+
+class Test46(unittest.TestCase):
+    def test_normal(self):
+        self.assertEqual(
+            normal([83, 65, 65, 78, 72, 66]), print(83, 65, 65, 78, 72, 66)
+        )
+
+    def test_inversa(self):
+        self.assertEqual(
+            inversa([83, 65, 65, 78, 72, 66]), print([66, 72, 78, 65, 65, 83])
+        )
+
+    def test_media(self):
+        self.assertEqual(
+            media([83, 65, 65, 78, 72, 66]), 71.5
+        )
 
 if __name__ == '__main__':
     unittest.main()
