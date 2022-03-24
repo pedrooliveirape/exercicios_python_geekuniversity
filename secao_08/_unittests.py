@@ -8,6 +8,8 @@ from ex46_08 import normal, inversa, media
 from ex47_08 import matriz4x4
 from ex48_08 import acimamatriz
 from ex49_08 import abaixomatriz
+from ex50_08 import soma_digprincipal
+from ex51_08 import soma_digsecundaria
 
 
 class Test41(unittest.TestCase):
@@ -137,6 +139,20 @@ class Test49(unittest.TestCase):
     def test_abaixo_matriz(self):
         self.assertEqual(
             abaixomatriz([1, 2, 3], [4, 5, 6], [7, 8, 9]), 19
+        )
+
+
+class Test50(unittest.TestCase):
+    def test_soma_diagonal_principal(self):
+        self.assertEqual(
+            soma_digprincipal([1, 2, 3], [4, 5, 6], [7, 8, 9]), 15
+        )
+
+
+class Test51(unittest.TestCase):
+    def test_soma_diagonal_secundaria(self):
+        self.assertEqual(
+            soma_digsecundaria([1, 2, 3], [4, 5, 6], [7, 8, 9]), 15
         )
 
 
