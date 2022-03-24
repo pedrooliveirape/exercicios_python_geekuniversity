@@ -5,6 +5,9 @@ from ex43_08 import gerador
 from ex44_08 import par_impar
 from ex45_08 import desviopadrao
 from ex46_08 import normal, inversa, media
+from ex47_08 import matriz4x4
+from ex48_08 import acimamatriz
+from ex49_08 import abaixomatriz
 
 
 class Test41(unittest.TestCase):
@@ -114,6 +117,28 @@ class Test46(unittest.TestCase):
         self.assertEqual(
             media([83, 65, 65, 78, 72, 66]), 71.5
         )
+
+
+class Test47(unittest.TestCase):
+    def test_matriz4x4(self):
+        self.assertEqual(
+            matriz4x4([1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]), 6
+        )
+
+
+class Test48(unittest.TestCase):
+    def test_acima_matriz(self):
+        self.assertEqual(
+            acimamatriz([1, 2, 3], [4, 5, 6], [7, 8, 9]), 11
+        )
+
+
+class Test49(unittest.TestCase):
+    def test_abaixo_matriz(self):
+        self.assertEqual(
+            abaixomatriz([1, 2, 3], [4, 5, 6], [7, 8, 9]), 19
+        )
+
 
 if __name__ == '__main__':
     unittest.main()
