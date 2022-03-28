@@ -11,6 +11,7 @@ from ex49_08 import abaixomatriz
 from ex50_08 import soma_digprincipal
 from ex51_08 import soma_digsecundaria
 from ex52_08 import matriztransposta
+from ex54_08 import somamatriz
 
 
 class Test41(unittest.TestCase):
@@ -161,6 +162,16 @@ class Test52(unittest.TestCase):
     def test_matriz_transposta(self):
         self.assertEqual(
             matriztransposta(3, 4, linha_0=[1, 2, 3, 4], linha_1=[5, 6, 7, 8], linha_2=[9, 10, 11, 12]), [[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
+        )
+
+
+class Test54(unittest.TestCase):
+    def test_1(self):
+        self.assertEqual(
+            somamatriz([1, 2, 3, 4], [5, 6, 7], [9, 10, 11, 12], [13, 14, 15, 16]), False
+        )
+        self.assertEqual(
+            somamatriz([1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]), 136
         )
 
 
