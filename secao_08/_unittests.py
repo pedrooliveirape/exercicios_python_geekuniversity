@@ -13,6 +13,7 @@ from ex51_08 import soma_digsecundaria
 from ex52_08 import matriztransposta
 from ex54_08 import somamatriz
 from ex55_08 import somaprisec
+from ex56_08 import somalinha
 
 
 class Test41(unittest.TestCase):
@@ -177,7 +178,7 @@ class Test54(unittest.TestCase):
 
 
 class Test55(unittest.TestCase):
-    def test_3to3(self):
+    def test_3by3(self):
         self.assertEqual(
             somaprisec([1, 2, 3], [4, 5, 6], [7, 8, 9, 10]), False
         )
@@ -188,6 +189,18 @@ class Test55(unittest.TestCase):
     def test_sum(self):
         self.assertEqual(
             somaprisec([1, 2, 3], [4, 5, 6], [7, 8, 9]), 30
+        )
+
+
+class Test56(unittest.TestCase):
+    def test_sevenbysix(self):
+        self.assertEqual(
+            somalinha([1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3], linha=2), False
+        )
+
+    def test_somalinha(self):
+        self.assertEqual(
+            somalinha([0, 1, 2, 3, 4, 5], [1, 2, 3, 4, 5, 6], [2, 3, 4, 5, 6, 7], [3, 4, 5, 6, 7, 8], [4, 5, 6, 7, 8, 9], [5, 6, 7, 8, 9, 10], [6, 7, 8, 9, 10, 11], 2), 27
         )
 
 

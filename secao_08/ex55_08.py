@@ -4,6 +4,13 @@ Faça uma função chamada 'somaprisec()' que recebe, por parâmetro, uma matriz
 
 
 def somaprisec(linha_0: list, linha_1: list, linha_2: list):
+    """
+
+    :param linha_0: Primeira linha da matriz 3x3.
+    :param linha_1: Segunda linha da matriz 3x3.
+    :param linha_2: Terceira linha da matriz 3x3.
+    :return: Retorna a soma do números da diagonal principal e da diagonal secundária.
+    """
     # Testando se a matriz é 3x3:
     matriz = [linha_0, linha_1, linha_2]
     for c in range(3):
