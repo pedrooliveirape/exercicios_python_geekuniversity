@@ -12,6 +12,7 @@ from ex50_08 import soma_digprincipal
 from ex51_08 import soma_digsecundaria
 from ex52_08 import matriztransposta
 from ex54_08 import somamatriz
+from ex55_08 import somaprisec
 
 
 class Test41(unittest.TestCase):
@@ -172,6 +173,21 @@ class Test54(unittest.TestCase):
         )
         self.assertEqual(
             somamatriz([1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]), 136
+        )
+
+
+class Test55(unittest.TestCase):
+    def test_3to3(self):
+        self.assertEqual(
+            somaprisec([1, 2, 3], [4, 5, 6], [7, 8, 9, 10]), False
+        )
+        self.assertEqual(
+            somaprisec([1, 2], [4, 5, 6], [7, 8, 9]), False
+        )
+
+    def test_sum(self):
+        self.assertEqual(
+            somaprisec([1, 2, 3], [4, 5, 6], [7, 8, 9]), 30
         )
 
 
